@@ -7,9 +7,7 @@ app = Flask(__name__)
 
 @app.route('/notify_approved')
 def notify_approved():
-    result = notify_appv("Your custom message")
-
-    return f"Function executed. Result: {result}"
+    notify_appv("Evidencia Prices upload is approved. I will inform you once Data Steward upload the data. You can close the pop up window")
 
 def notify_appv(text) -> None:
     title = f"**Approved** "
