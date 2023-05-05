@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 @app.route('/notify_approved')
 def notify_approved():
-    notify_appv("Evidencia Prices upload is approved. I will inform you once Data Steward upload the data. You can close the pop up window")
-
+    result = notify_appv("Evidencia Prices upload is approved. I will inform you once Data Steward upload the data. You can close the pop up window")
+    return(result)
 def notify_appv(text) -> None:
     title = f"**Approved** "
     now = str(datetime.now())
