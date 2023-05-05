@@ -60,7 +60,7 @@ def notify_rejc(text) -> None:
                     "entityId": "anicura_error"+now,
                     "url": "revenue.ai",
                     "metadatas": {},
-                    "userIds": ["alia.35@insightlynx.ai", "paweld.64@insightlynx.ai"],
+                    "userIds": ["paweld.64@insightlynx.ai"],
                     }
     resp = httpx.post(endpoint, json=request_data, headers=headers, timeout=10.0)
     assert resp.status_code == 200, resp.content
